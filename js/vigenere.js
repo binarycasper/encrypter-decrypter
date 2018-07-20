@@ -10,7 +10,7 @@ function doEncryption() {
         alert("The key does not contain a letter.");
         return; 
     }
-    else if (document.getElementById("isDecrypt"))
+    if (document.getElementById("isDecrypt"))
     {
         for(var i = 0; i < key.length; i++)
         key[i]=(26-key[i])%26; 
@@ -22,16 +22,15 @@ function doEncryption() {
 function Encrypt(input, key)
 {
     var output="";
-    var j = 0;  
-    for (var i = 0; i<input.length; i++)
+    for (var i = 0, j = 0; i<input.length; i++)
     {
         var c = input.charCodeAt(i); 
         if (isUpperCase(c)) {
-            output += string.fromCharCode((c - 65 + key[j % key.length])%26 + 65); 
+            output += String.fromCharCode((c - 65 + key[j % key.length])%26 + 65); 
             j++; 
         }
         else if (isLowerCase(c)) {
-            output += string.fromCharCode((c - 97 + key[j % key.length])%26 + 97);
+            output += String.fromCharCode((c - 97 + key[j % key.length])%26 + 97);
             j++;
         }
         else {
@@ -43,7 +42,7 @@ function Encrypt(input, key)
 
 function filterKey(key) {
     var res = []; 
-    for (var i = 0; i < key-length; i++) { 
+    for (var i = 0; i < key.length; i++) { 
         var c = key.charCodeAt(i);
         if (isLetter(c))
             res.push((c - 65) % 32); 
