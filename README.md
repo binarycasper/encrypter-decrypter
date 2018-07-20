@@ -1,4 +1,4 @@
-# Encypter-Decrypter
+# Encrypter-Decrypter
 
 ## What is this?
 A website to encrypt and decrypt text in simple ciphers. 
