@@ -1,9 +1,10 @@
 function doBinary() {
-    if(button.value==0)
+    var buttonChoice = document.getElementById("button").value; 
+    if(buttonChoice==0)
     {
         doEncryption();
     }
-    else if (button.value==1)
+    else if (buttonChoice==1)
     {
         doDecryption();
     }
