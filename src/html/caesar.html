@@ -1,19 +1,19 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Caesar - Encrypter Decrypter</title>
+        <title>Caesar - Encrypter-Decrypter</title>
         <link href="style.css" type="stylesheet">
         <script type="text/javascript" src="js/caesar.js"></script> 
     </head>
     <body>
-        <form action="" method="post" onsubmit="doEncryption()">
+        <form action="" method="post" onsubmit="doCaesar()">
             <h1>Caesar Cipher</h1>
             <p>Text</p>
             <input type="text" id="text"/><br/>
             <p>Shift</p>
             <input type="text" id="shift"/><br/>
-            <button type="submit">Encrypt</button>
-            <button type="submit" id="isDecrypt">Decrypt</button>
+            <button type="submit" id="button" value=0>Encrypt</button>
+            <button type="submit" id="button" value=1>Decrypt</button>
             <p id="output"></p>
         </form>
     </body>
