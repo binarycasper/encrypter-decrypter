@@ -1,17 +1,17 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Caesar - Encrypter-Decrypter</title>
+        <title>Vigenere - Encrypter-Decrypter</title>
         <link href="style.css" type="stylesheet">
-        <script type="text/javascript" src="js/caesar.js"></script> 
+        <script type="text/javascript" src="js/vigenere.js"></script>
     </head>
     <body>
-        <form action="" method="post" onsubmit="doCaesar()">
-            <h1>Caesar Cipher</h1>
+        <form action="" method="GET" onsubmit="doVigenere()">
+            <h1>Vigenere Cipher</h1>
             <p>Text</p>
             <input type="text" id="text"/><br/>
-            <p>Shift</p>
-            <input type="text" id="shift"/><br/>
+            <p>Key</p>
+            <input type="text" id="key"/><br/>
             <button type="submit" id="button" value=0>Encrypt</button>
             <button type="submit" id="button" value=1>Decrypt</button>
             <p id="output"></p>
