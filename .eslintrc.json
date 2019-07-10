@@ -5,5 +5,18 @@
     "eslint.validate": [
         "javascript",
         "typescript"
-    ]
+    ],
+    "rules": {
+        "no-console": "off",
+        "indent": [
+            "error", 
+            4
+        ],
+        "linebreak-style": "off",
+        "quotes": "off",
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
 }
