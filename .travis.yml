@@ -8,9 +8,11 @@ cache:
 script: yarn build
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: build 
-  keep_history: true
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: build 
+  repo: binarycasper/encrypter-decrypter
+  target-branch: master
+  keep-history: true
   on:
     branch: master 
