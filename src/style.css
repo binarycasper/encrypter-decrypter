@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html, body, #websiteCointainer {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+} 
+
+.layout {
+    display: flex;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+.flex {
+    flex: 1;
+}
+
+.big {
+    flex: 2;
+}
+
+.center {
+    align-items: center;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.start {
+    align-items: flex-start;
+}
+
+.stretch {
+    align-self: stretch;
+}

@@ -1,9 +1,31 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Encrypter-Decrypter</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <script src="index.ts"></script>
+        <div id="websiteContainer" class="layout vertical">
+            <div id="ciphers"></div>
+            <div class="layout vertical">
+                <div class="layout horizontal">
+                    <p>Text</p>
+                    <input id="input" type="text">
+                </div>
+                <div id="passwordSection" class="layout horizontal">
+                    <p>Password</p>
+                    <input id="password" type="text">
+                </div>
+                <div>
+                    <input id="checkboxEncrypt" type="checkbox"> 
+                    <p>Encrypt</p>
+                    <input id="checkboxDecrypt" type="checkbox">
+                    <p>Decrypt</p>
+                </div>
+                <button>Calculate</button> 
+            </div>
+        </div>
     </body>
+    <script src="index.ts"></script>
 </html>
